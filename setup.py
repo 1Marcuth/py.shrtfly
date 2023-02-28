@@ -6,7 +6,7 @@ with open("README.md", "r") as readme_bf:
 
 setup(
     name="shrtfly",
-    version="0.0.0.0.3",
+    version="0.0.0.0.4",
     license="MIT License",
     author="Marcuth",
     long_description=readme_content,
@@ -15,5 +15,5 @@ setup(
     keywords="ShrtFly wrapper api",
     description=f"Wrappper for {BASE_URL}",
     packages=["shrtfly"],
-    install_requires=["requests", "pydantic"],
+    install_requires=["httpx", "pydantic", "httpx[http2]"],
 )
